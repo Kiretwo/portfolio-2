@@ -6,6 +6,7 @@ import {
   FaFigma,
   FaReact,
   FaExternalLinkAlt,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 
 const HomePage = () => {
@@ -43,11 +44,15 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+      {" "}
       <section className="intro-section">
         <h1>Erik Torkildsen</h1>
         <p className="subtitle">21-year-old Front-End Developer.</p>
+        <p className="location">
+          <FaMapMarkerAlt className="location-icon" />
+          Bergen, Norway
+        </p>
       </section>
-
       <section className="skills-section">
         <h2>Skills</h2>
         <ul className="skills-list">
@@ -59,7 +64,6 @@ const HomePage = () => {
           ))}
         </ul>
       </section>
-
       <section className="projects-preview-section">
         <h2>My Projects</h2>
         <p>Take a look at some of the things I've built.</p>

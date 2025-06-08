@@ -46,13 +46,13 @@
   width: 100%;
   z-index: 1000;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-
   nav {
     max-width: vars.$container-max-width;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; // Pushes logo/name to left, links to right
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 
     .nav-logo a {
       font-size: 1.5rem;
@@ -64,14 +64,28 @@
       }
     }
 
-    ul {
+    .nav-links {
       list-style: none;
       padding: 0;
       margin: 0;
       display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media (max-width: 768px) {
+        position: static;
+        transform: none;
+        margin-left: auto;
+        margin-right: vars.$spacing-unit;
+      }
 
       li {
         margin-left: vars.$spacing-unit * 2;
+
+        &:first-child {
+          margin-left: 0;
+        }
 
         a {
           color: vars.$text-color;
@@ -89,13 +103,47 @@
         }
       }
     }
+
+    .contact-icons {
+      display: flex;
+      gap: vars.$spacing-unit;
+
+      .contact-icon {
+        color: vars.$text-color;
+        font-size: 1.3rem;
+        padding: math.div(vars.$spacing-unit, 2);
+        border-radius: 4px;
+        transition: color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+          color: vars.$accent-color;
+          transform: translateY(-2px);
+        }
+      }
+
+      @media (max-width: 768px) {
+        gap: math.div(vars.$spacing-unit, 2);
+
+        .contact-icon {
+          font-size: 1.2rem;
+          padding: 0.3rem;
+        }
+      }
+    }
   }
 }
 
 // Add padding to the top of the body/main content area to offset the fixed header
-body,
-.app-content {
+body {
   padding-top: 80px; // Adjust this based on your header's actual height
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  padding-top: 0; // Remove top padding since body already has it
+  flex: 1; // Allows main content to grow and push footer down
 }
 
 // Section Styling (Consistent Page Spacing)
@@ -133,6 +181,59 @@ section {
     &.cols-2,
     &.cols-3 {
       grid-template-columns: 1fr;
+    }
+  }
+}
+
+// Site Footer
+.site-footer {
+  background-color: vars.$secondary-color;
+  margin-top: vars.$spacing-unit * 4;
+  padding: vars.$spacing-unit * 2 0;
+  border-top: 1px solid color.adjust(vars.$accent-color, $alpha: -0.7);
+
+  .footer-content {
+    max-width: vars.$container-max-width;
+    margin: 0 auto;
+    padding: 0 vars.$spacing-unit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: vars.$spacing-unit;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: math.div(vars.$spacing-unit, 2);
+    }
+
+    p {
+      color: vars.$text-color-secondary;
+      margin: 0;
+      font-size: 0.9rem;
+
+      @media (max-width: 768px) {
+        font-size: 0.85rem;
+      }
+    }
+
+    .footer-contact {
+      display: flex;
+      gap: vars.$spacing-unit;
+
+      .footer-contact-icon {
+        color: vars.$text-color-secondary;
+        font-size: 1.2rem;
+        padding: math.div(vars.$spacing-unit, 2);
+        border-radius: 4px;
+        transition: color 0.3s ease, transform 0.2s ease;
+
+        &:hover {
+          color: vars.$accent-color;
+          transform: translateY(-2px);
+        }
+      }
     }
   }
 }
