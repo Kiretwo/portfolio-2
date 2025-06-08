@@ -1,0 +1,53 @@
+@use "../utils/variables" as vars;
+@use "../utils/mixins" as mixins;
+
+.projects-page {
+  padding: vars.$spacing-unit * 2 0;
+
+  .page-title {
+    text-align: center;
+    font-size: vars.$font-size-h1 * 1.1;
+    color: vars.$accent-color;
+    margin-bottom: vars.$spacing-unit * 3;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); // Responsive grid
+    gap: vars.$spacing-unit * 2;
+
+    .project-item {
+      background-color: vars.$secondary-color;
+      padding: vars.$spacing-unit * 1.5;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      h2 {
+        font-size: vars.$font-size-h2 * 0.9;
+        margin-bottom: vars.$spacing-unit;
+        a {
+          color: vars.$accent-color;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      p {
+        font-size: vars.$font-size-p;
+        color: vars.$text-color-secondary;
+        line-height: 1.5;
+      }
+    }
+  }
+}

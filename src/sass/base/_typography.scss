@@ -1,9 +1,9 @@
 @use "../utils/variables" as vars;
 
 body {
-  font-family: vars.$font-secondary;
+  font-family: vars.$font-family-main;
   color: vars.$text-color;
-  background-color: vars.$background-color;
+  background-color: vars.$primary-color;
   // Add other base typography styles here, e.g., font-size, line-height for body
 }
 

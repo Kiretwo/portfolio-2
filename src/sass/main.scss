@@ -1,9 +1,11 @@
-@forward "utils/variables";
-@forward "utils/mixins";
-@forward "base/reset";
-@forward "base/typography";
-@forward "layout/layout"; // For styles in src/styles/layout/_layout.scss
+@use "utils/variables";
+@use "utils/mixins";
+@use "base/reset";
+@use "base/typography";
+@use "layout/layout"; // For styles in src/styles/layout/_layout.scss
+@use "pages/homepage";
+@use "pages/projectspage";
 /*
-@forward "globals";
-@forward "buttons";
+@use "globals";
+@use "buttons";
 */
