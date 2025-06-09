@@ -11,7 +11,7 @@ const HolidazePage = () => {
 Key features include user registration and authentication, comprehensive venue browsing with filtering capabilities, detailed venue pages with image galleries, secure booking system with date selection, user dashboard for managing bookings, and venue management system for hosts.
 
 The application was built with a focus on user experience, responsive design, and modern web development practices. It demonstrates proficiency in React development, API integration, state management, and responsive design principles.`,
-    tech: ["React", "TypeScript", "CSS"],
+    tech: ["React", "TypeScript", "Sass"],
     image: "/holidaze.png",
     liveUrl: "https://erik-holidaze.netlify.app/",
     githubUrl: "#", // Add your GitHub URL

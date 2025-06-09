@@ -17,7 +17,7 @@ const HomePage = () => {
       name: "Holidaze",
       url: "https://erik-holidaze.netlify.app/",
       description: "Website for booking and hosting accommodations.",
-      tech: ["React", "TypeScript", "CSS"],
+      tech: ["React", "TypeScript", "Sass"],
       image: "/holidaze.png",
       projectType: "Project Exam 2",
       slug: "holidaze",
