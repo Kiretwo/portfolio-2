@@ -4,7 +4,8 @@ const HolidazePage = () => {
   const project = {
     name: "Holidaze",
     projectType: "Project Exam 2",
-    description: "A comprehensive accommodation booking platform that allows users to browse, book, and manage holiday accommodations. The platform features user authentication, booking management, and venue hosting capabilities.",
+    description:
+      "A comprehensive accommodation booking platform that allows users to browse, book, and manage holiday accommodations. The platform features user authentication, booking management, and venue hosting capabilities.",
     longDescription: `Holidaze is a modern accommodation booking platform built as my Project Exam 2. The application provides a seamless experience for both travelers looking for accommodations and hosts wanting to list their properties.
 
 Key features include user registration and authentication, comprehensive venue browsing with filtering capabilities, detailed venue pages with image galleries, secure booking system with date selection, user dashboard for managing bookings, and venue management system for hosts.
@@ -21,14 +22,14 @@ The application was built with a focus on user experience, responsive design, an
       "Booking system with calendar integration",
       "User dashboard for booking management",
       "Venue management for hosts",
-      "Responsive design for all devices"
+      "Responsive design for all devices",
     ],
     challenges: [
       "Implementing complex booking logic with date validation",
       "Creating a responsive image gallery component",
       "Managing application state across multiple components",
-      "Integrating with external APIs for data management"
-    ]
+      "Integrating with external APIs for data management",
+    ],
   };
 
   return (
@@ -39,7 +40,7 @@ The application was built with a focus on user experience, responsive design, an
           <h1>{project.name}</h1>
           <p className="project-description">{project.description}</p>
           <div className="project-links">
-            <a 
+            <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +48,7 @@ The application was built with a focus on user experience, responsive design, an
             >
               <FaExternalLinkAlt /> View Live Site
             </a>
-            <a 
+            <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"

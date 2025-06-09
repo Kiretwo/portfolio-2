@@ -4,7 +4,8 @@ const MatboksenPage = () => {
   const project = {
     name: "Matboksen",
     projectType: "Agency 2",
-    description: "A nutrition tracking application that helps users monitor their daily calorie intake and nutritional values of various foods.",
+    description:
+      "A nutrition tracking application that helps users monitor their daily calorie intake and nutritional values of various foods.",
     longDescription: `Matboksen is a comprehensive nutrition tracking application developed as my Agency 2 project. The application helps users maintain a healthy lifestyle by tracking their daily food intake, calories, and nutritional information.
 
 The platform features a searchable food database, nutrition fact tracking, daily intake monitoring, meal planning capabilities, and personalized nutrition goals. Users can log their meals, view detailed nutritional breakdowns, and track their progress over time.
@@ -21,14 +22,14 @@ This project showcases modern React development practices, integration with nutr
       "Progress tracking and analytics",
       "Personalized nutrition goals",
       "Meal planning and suggestions",
-      "Mobile-responsive design"
+      "Mobile-responsive design",
     ],
     challenges: [
       "Integrating with nutrition APIs",
       "Implementing complex data visualization",
       "Managing large datasets efficiently",
-      "Creating intuitive user experience for food logging"
-    ]
+      "Creating intuitive user experience for food logging",
+    ],
   };
 
   return (
@@ -39,7 +40,7 @@ This project showcases modern React development practices, integration with nutr
           <h1>{project.name}</h1>
           <p className="project-description">{project.description}</p>
           <div className="project-links">
-            <a 
+            <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +48,7 @@ This project showcases modern React development practices, integration with nutr
             >
               <FaExternalLinkAlt /> View Live Site
             </a>
-            <a 
+            <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"

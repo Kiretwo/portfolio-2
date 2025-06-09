@@ -97,7 +97,10 @@
             color: vars.$primary-color;
 
             &:hover {
-              background-color: color.adjust(vars.$accent-color, $lightness: -10%);
+              background-color: color.adjust(
+                vars.$accent-color,
+                $lightness: -10%
+              );
               transform: translateY(-2px);
             }
           }

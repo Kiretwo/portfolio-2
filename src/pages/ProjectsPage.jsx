@@ -10,7 +10,7 @@ const ProjectsPage = () => {
       tech: ["React", "TypeScript", "Sass"],
       image: "/holidaze.png",
       projectType: "Project Exam 2",
-      slug: "holidaze"
+      slug: "holidaze",
     },
     {
       name: "Auksjonshuset",
@@ -20,7 +20,7 @@ const ProjectsPage = () => {
       tech: ["JavaScript", "HTML", "Sass"],
       image: "/auksjonshuset.png",
       projectType: "Semesteroppgave 2",
-      slug: "auksjonshuset"
+      slug: "auksjonshuset",
     },
     {
       name: "Matboksen",
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
       tech: ["React", "JavaScript", "TailwindCSS"],
       image: "/matboksen.png",
       projectType: "Agency 2",
-      slug: "matboksen"
+      slug: "matboksen",
     },
   ];
 
@@ -60,10 +60,7 @@ const ProjectsPage = () => {
                 ))}
               </div>
               <div className="project-actions">
-                <Link
-                  to={`/projects/${project.slug}`}
-                  className="project-link"
-                >
+                <Link to={`/projects/${project.slug}`} className="project-link">
                   View Details <FaExternalLinkAlt />
                 </Link>
                 <a

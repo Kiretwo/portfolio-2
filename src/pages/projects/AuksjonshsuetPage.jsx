@@ -4,7 +4,8 @@ const AuksjonshsuetPage = () => {
   const project = {
     name: "Auksjonshuset",
     projectType: "Semesteroppgave 2",
-    description: "An auction platform where users can create listings for items to be auctioned and place bids on items listed by other users.",
+    description:
+      "An auction platform where users can create listings for items to be auctioned and place bids on items listed by other users.",
     longDescription: `Auksjonshuset is a comprehensive auction platform developed as my Semesteroppgave 2. The application allows users to participate in online auctions by both listing items for sale and bidding on items posted by other users.
 
 The platform features a complete user authentication system, item listing functionality with image uploads, real-time bidding system, auction management, and user profile pages. Users can track their active bids, manage their listings, and view auction history.
@@ -21,14 +22,14 @@ This project demonstrates proficiency in JavaScript development, DOM manipulatio
       "Search and filter auctions",
       "User profile and bid history",
       "Auction countdown timers",
-      "Responsive design across devices"
+      "Responsive design across devices",
     ],
     challenges: [
       "Implementing real-time bid updates",
       "Creating dynamic countdown timers",
       "Managing complex state with vanilla JavaScript",
-      "Handling image uploads and validation"
-    ]
+      "Handling image uploads and validation",
+    ],
   };
 
   return (
@@ -39,7 +40,7 @@ This project demonstrates proficiency in JavaScript development, DOM manipulatio
           <h1>{project.name}</h1>
           <p className="project-description">{project.description}</p>
           <div className="project-links">
-            <a 
+            <a
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -47,7 +48,7 @@ This project demonstrates proficiency in JavaScript development, DOM manipulatio
             >
               <FaExternalLinkAlt /> View Live Site
             </a>
-            <a 
+            <a
               href={project.githubUrl}
               target="_blank"
               rel="noopener noreferrer"

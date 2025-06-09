@@ -10,7 +10,8 @@ import {
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const HomePage = () => {  // Project data for preview cards
+const HomePage = () => {
+  // Project data for preview cards
   const featuredProjects = [
     {
       name: "Holidaze",
@@ -19,7 +20,7 @@ const HomePage = () => {  // Project data for preview cards
       tech: ["React", "TypeScript", "CSS"],
       image: "/holidaze.png",
       projectType: "Project Exam 2",
-      slug: "holidaze"
+      slug: "holidaze",
     },
     {
       name: "Auksjonshuset",
@@ -29,7 +30,7 @@ const HomePage = () => {  // Project data for preview cards
       tech: ["JavaScript", "HTML", "Sass"],
       image: "/auksjonshuset.png",
       projectType: "Semesteroppgave 2",
-      slug: "auksjonshuset"
+      slug: "auksjonshuset",
     },
     {
       name: "Matboksen",
@@ -38,7 +39,7 @@ const HomePage = () => {  // Project data for preview cards
       tech: ["React", "JavaScript", "TailwindCSS"],
       image: "/matboksen.png",
       projectType: "Agency 2",
-      slug: "matboksen"
+      slug: "matboksen",
     },
   ];
 
@@ -111,15 +112,14 @@ const HomePage = () => {  // Project data for preview cards
                       {tech}
                     </span>
                   ))}
-                </div>                <Link
-                  to={`/projects/${project.slug}`}
-                  className="project-link"
-                >
+                </div>{" "}
+                <Link to={`/projects/${project.slug}`} className="project-link">
                   View Project <FaExternalLinkAlt />
                 </Link>
               </div>
             </div>
-          ))}        </div>
+          ))}{" "}
+        </div>
 
         <Link to="/projects" className="view-all-projects">
           View All Projects
