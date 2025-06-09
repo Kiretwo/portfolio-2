@@ -26,10 +26,10 @@ const Layout = () => {
                 Projects
               </NavLink>
             </li>
-          </ul>
+          </ul>{" "}
           <div className="contact-icons">
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/erik-torkildsen-31b8872a4/"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon"
@@ -38,7 +38,7 @@ const Layout = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/Kiretwo"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-icon"
@@ -57,10 +57,10 @@ const Layout = () => {
           <p>
             &copy; 2025 Erik Torkildsen. Front-End Developer based in Bergen,
             Norway.
-          </p>
+          </p>{" "}
           <div className="footer-contact">
             <a
-              href="https://linkedin.com/in/your-profile"
+              href="https://www.linkedin.com/in/erik-torkildsen-31b8872a4/"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-contact-icon"
@@ -69,7 +69,7 @@ const Layout = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/your-username"
+              href="https://github.com/Kiretwo"
               target="_blank"
               rel="noopener noreferrer"
               className="footer-contact-icon"

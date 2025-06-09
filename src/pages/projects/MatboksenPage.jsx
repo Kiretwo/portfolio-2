@@ -14,7 +14,7 @@ This project showcases modern React development practices, integration with nutr
     tech: ["React", "JavaScript", "TailwindCSS"],
     image: "/matboksen.png",
     liveUrl: "https://ca-agency-2-gul.netlify.app/",
-    githubUrl: "#", // Add your GitHub URL
+    githubUrl: "https://github.com/Agency-2-gul/ca-agency-2",
     features: [
       "Comprehensive food database search",
       "Nutrition facts and calorie tracking",

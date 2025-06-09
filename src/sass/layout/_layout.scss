@@ -96,19 +96,21 @@
         &:first-child {
           margin-left: 0;
         }
-
         a {
           color: vars.$text-color;
           text-decoration: none;
           font-size: 1.1rem;
           padding: math.div(vars.$spacing-unit, 2) vars.$spacing-unit;
           border-radius: 4px;
-          transition: background-color 0.3s ease, color 0.3s ease;
+          transition: background-color 0.3s ease, color 0.3s ease,
+            border-bottom 0.3s ease;
+          border-bottom: 2px solid transparent;
 
           &:hover,
           &.active {
-            color: vars.$primary-color;
-            background-color: vars.$accent-color;
+            color: vars.$accent-color;
+            background-color: rgba(vars.$accent-color, 0.1);
+            border-bottom: 2px solid vars.$accent-color;
           }
         }
       }

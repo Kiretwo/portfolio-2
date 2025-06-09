@@ -77,7 +77,7 @@
       margin-bottom: math.div(vars.$spacing-unit, 2);
     }
     .subtitle {
-      font-size: 1rem; // 16px
+      font-size: 1.1rem; // Match location text size
       color: vars.$text-color-secondary;
       margin-bottom: vars.$spacing-unit;
     }

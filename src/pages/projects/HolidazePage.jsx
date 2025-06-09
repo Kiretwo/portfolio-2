@@ -14,7 +14,7 @@ The application was built with a focus on user experience, responsive design, an
     tech: ["React", "TypeScript", "Sass"],
     image: "/holidaze.png",
     liveUrl: "https://erik-holidaze.netlify.app/",
-    githubUrl: "#", // Add your GitHub URL
+    githubUrl: "https://github.com/Kiretwo/project-exam-2",
     features: [
       "User authentication and registration",
       "Venue browsing with search and filters",

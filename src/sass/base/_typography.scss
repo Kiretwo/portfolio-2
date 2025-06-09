@@ -2,16 +2,64 @@
 
 body {
   font-family: vars.$font-family-main;
+  font-weight: 400;
   color: vars.$text-color;
   background-color: vars.$primary-color;
-  // Add other base typography styles here, e.g., font-size, line-height for body
+  line-height: 1.6;
+  font-size: vars.$font-size-base;
 }
 
-// Can also define styles for headings, paragraphs, etc.
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: "Roboto", Arial, Helvetica, sans-serif; // Or a different font for headings
-// }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: vars.$font-family-heading;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.02em; // Slightly tighter spacing for headings
+}
 
-// p {
-//   line-height: 1.6;
-// }
+h1 {
+  font-weight: 700;
+  font-size: vars.$font-size-h1;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+h2 {
+  font-size: vars.$font-size-h2;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+  }
+}
+
+p {
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+// Code elements (if you add any)
+code,
+pre {
+  font-family: vars.$font-family-mono;
+  font-size: 0.9em;
+}
+
+// Improved button typography
+button {
+  font-family: vars.$font-family-main;
+  font-weight: 500;
+}

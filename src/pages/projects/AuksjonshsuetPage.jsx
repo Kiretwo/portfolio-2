@@ -14,7 +14,7 @@ This project demonstrates proficiency in JavaScript development, DOM manipulatio
     tech: ["JavaScript", "HTML", "Sass"],
     image: "/auksjonshuset.png",
     liveUrl: "https://auksjonshuset.netlify.app/",
-    githubUrl: "#", // Add your GitHub URL
+    githubUrl: "https://github.com/Kiretwo/Auksjonshuset-Semesteroppgave2",
     features: [
       "User registration and authentication",
       "Create auction listings with images",

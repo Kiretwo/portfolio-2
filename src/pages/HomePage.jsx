@@ -56,9 +56,10 @@ const HomePage = () => {
     <div className="home-page">
       {" "}
       <section className="intro-section">
+        {" "}
         <div className="intro-content">
           <div className="intro-text">
-            <h1>Erik Torkildsen</h1>
+            <h1>Hi, I'm Erik Torkildsen 👋</h1>
             <p className="subtitle">21-year-old Front-End Developer.</p>
             <p className="location">
               <FaMapMarkerAlt className="location-icon" />
